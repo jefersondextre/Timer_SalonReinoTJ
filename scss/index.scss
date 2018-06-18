@@ -1,0 +1,29 @@
+
+@import "base/normalize";
+@import "base/base";
+@import "layout/layout";
+@import "modules/cronometro";
+@import "modules/animation_bg";
+
+
+// 300;
+// 400;
+// 700;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Roboto Slab', serif;
+
+:root{
+  --size-font-clock: 1.8em;
+  --size-font-messages:3rem;
+  --size:8vh;
+
+  --color-text: #fff;
+  --color-white: #fff;
+  --color-admin: #0396A6;
+  --color-oro:rgb(199, 187, 12);
+  --color-black:rgb(0, 0, 0);
+  --boton-primary:#000;
+  --boton-secondary:rgb(31, 31, 31);
+
+
+}

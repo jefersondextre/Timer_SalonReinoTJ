@@ -1,0 +1,163 @@
+.container {
+  height: 100vh; // width: 100%;
+  display: flex;
+  font-family: 'Roboto Slab', serif; // justify-content: center;
+  // align-items: center;
+  position: relative; // overflow: hidden;
+  .animate {
+    position: absolute;
+    left: -100%;
+    background: rgba(0, 0, 0, 0.946);
+    width: 100%;
+    width: calc(100vw - 21rem);
+    height: 100vh;
+    z-index: 100;
+    padding: 15rem 1vh 0;
+    white-space: pre-wrap; // font-size: 6vh;
+    transition: all .5s;
+    &.anuncio {
+    overflow: hidden;
+
+      left: 0;
+      z-index: 100;
+      height: 100vh;
+      color: var(--color-white);
+      text-shadow: 3px 2px 3px var(--color-admin);
+      display: flex; // text-align: center;
+      justify-content: center;
+      align-items: center;
+      font-size: calc(var(--size)*3vh);
+    }
+  }
+  .section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    // iframe
+    overflow: hidden;
+    position: relative;
+    &-Clock {
+      flex: auto;
+      display: flex;
+      justify-content: center;
+      width: calc(100vw - 21rem);
+      font-size: 9rem;
+      line-height: 5vh;
+      word-spacing: 150px;
+      left: 3px;
+      background: rgb(253, 253, 253)
+    }
+    &-Control {
+      background: var(--color-admin);
+      color: var(--color-text);
+      padding: 0 .5rem;
+      max-width: 25rem;
+    }
+    .textarea {
+      display: flex;
+      flex-direction: column;
+      resize: vertical;
+      &>.item {
+        width: 100%;
+        font-size: 1rem;
+      }
+    }
+  } //Formateando horas - numeros
+  .hours {
+    display: flex;
+    flex-direction: column;
+    p {
+      position: relative;
+      top: -48px;
+      left: 25px;
+      color: var(--color-oro);
+      text-shadow: 2px 1px 2px #000;
+    }
+  }
+}
+
+article {
+  height: 50%;
+  margin: 1rem; // background: orange;
+  height: calc(100vh /2); // border: 1px solid black;
+  width: 18rem;
+  display: flex;
+  & .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-shadow: 1px .5px 1px var(--color-black);
+    .nota {
+      color: var(--color-oro);
+    }
+    &-textarea {
+      position: relative;
+      top: -65px;
+      padding: .5rem 0;
+      margin: 20px 0;
+      min-height: 100px;
+    }
+    input {
+      width: 10em;
+      margin-top: 1rem;
+    }
+   
+  }
+
+}
+
+.button {
+  cursor: pointer;
+  background: var(--boton-primary); // padding:  5px 0;
+  border-radius: 7px;
+  border: none;
+  color: var(--color-text);
+  line-height: .3rem;
+  height: 2rem;
+  margin: 0 3px;
+  box-shadow: 1px 1px 1px var(--boton-secondary);
+  &-news {
+    position: relative; // margin: 0 4//
+    top: -6rem;
+    padding: 1rem 0 18px; // margin: auto 0;
+  }
+  &:focus {
+    // border: 1px solid transparent;
+    border: none;
+  }
+  &:active {
+    background: var(--color-text);
+    color: var(--color-admin);
+    transform: scaleY(.99);
+    font-weight: bold;
+    transition: all .5 ease;
+    transform: scale(1.05);
+  }
+}
+
+.content_anuncios {
+  font-size: 55rem;
+  color: white;
+}
+
+.iframe {
+  position: relative;
+  &-item {
+    // background: red;
+
+    margin: 1.5rem 0;
+    margin-top: 5rem;
+  }
+  &-input {
+    text-align: center;
+    width: 100%; // padding: 0;
+    font-size: 3rem;
+  }
+}
+
+.container-hidden {
+  height: 50rem;
+}

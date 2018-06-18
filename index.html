@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="/css/flipclock.css"> -->
+  <link rel="stylesheet" href="css/index.css">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <section class="main-section">
+
+      <section class="animate" id="messages">
+
+      </section>
+      <form class=" hours section-Clock  section" id="form">
+        <input class="clock" type="text" name="cronometro" value="00:00:00" readonly="readonly" />
+        <br>
+        <p style="font-size: 50px"> Horas minutos segundos</p>
+      </form>
+    </section>
+
+
+
+    <section class="section section-Control">
+      <article class="aricle-clock">
+        <!-- <label class="item ">Ingresa los minutos
+          <input class="input" type="text" name="minutos" id="minutos" required>
+        </label> -->
+
+        <div class="item">
+          <p>Presione iniciar
+            <b class="nota"> una sola vez.</b>
+          </p>
+          <div class="container-button">
+            <input class="button" type="button" value="Iniciar" id="enviar" onclick="setInterval('tempo()',1000); return false;">
+            <input class="button" type="button" value="Reiniciar" id="clearinput">
+          </div>
+
+        </div>
+      </article>
+
+      <article class="textarea">
+        <textarea class="item item-textarea" name="textarea" id="contenido_text">
+
+        </textarea>
+        <div class="item item-news">
+          <div class="container-button">
+            <input class="button button-news" type="button" value="Enviar Anuncio" id="animar">
+            <input class="button button-news" type="button" value="Quitar Anuncio" id="cerrar">
+          </div>
+          <input class="button-news" type="range" value="0" step="1" max="5" id="sizefont" list="Msizefont">
+          <datalist id="Msizefont">
+              <option value="0" label="0%">
+                <option value="1" >
+                  <option value="2" label="50%">
+                    <option value="3" >
+                      <option value="4">
+                            <option value="5" label="100%">
+          </datalist>
+        </div>
+      </article>
+      <!-- Previzualizacion -->
+      <article class="iframe" id="form">
+        <form class=" iframe-item hours section-Clock" id="iframe-form">
+          <input class="iframe-input" type="text" name="cronometro" value="00:00:00" readonly="readonly" />
+        </form>
+      </article>
+      <article class="container-hidden">
+
+      </article>
+    </section>
+
+  </div>
+
+  <script src="js/index.js"></script>
+  <script src="/js/reloj.js"></script>
+
+</body>
+
+</html>
